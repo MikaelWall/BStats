@@ -22,5 +22,15 @@ public class GamestartActivity extends AppCompatActivity {
                 startActivity(gameFeedIntent);
             }
         });
+
+        Button twoGameBtn = (Button) findViewById(R.id.twoGameButton);
+        twoGameBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gameFeedIntent = new Intent(getApplicationContext(), GameFeedActivity.class);
+                gameFeedIntent.putExtra("goToGameFeed", 0);
+                startActivity(gameFeedIntent);
+            }
+        });
     }
 }

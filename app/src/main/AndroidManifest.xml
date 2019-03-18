@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GameFeedActivity"></activity>
+        <activity android:name=".AddPlayerActivity"></activity>
+        <activity android:name=".GameFeedActivity" />
         <activity android:name=".GamestartActivity" />
         <activity android:name=".LeaderboardsActivity" />
         <activity android:name=".PlayerlistActivity" />
