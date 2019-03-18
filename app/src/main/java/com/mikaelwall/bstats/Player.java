@@ -1,18 +1,23 @@
 package com.mikaelwall.bstats;
 
-public class Player {
+import java.io.Serializable;
+
+@SuppressWarnings("serial")
+public class Player implements Serializable {
 
     private String name;
-    private int gamesPlayed;
-    private int fgMade;
-    private int fgAttempted;
-    private int blocks;
-    private int steals;
-    private int assists;
+    private int gamesPlayed = 3;
+    private int fgMade = 3;
+    private int fgAttempted = 6;
+    private int fgRatio = 100 * (fgMade/fgAttempted);
+    private int blocks = 10;
+    private int steals = 2;
+    private int assists = 6;
 
     public Player(String name) {
         this.name = name;
     }
+
 
     public String getName() {
         return name;
@@ -40,6 +45,14 @@ public class Player {
 
     public void addFgAttempted() {
         this.fgAttempted++;
+    }
+
+    public int getFgRatio() {
+        return fgRatio;
+    }
+
+    public void setFgRatio(int fgRatio) {
+        this.fgRatio = fgRatio;
     }
 
     public int getBlocks() {

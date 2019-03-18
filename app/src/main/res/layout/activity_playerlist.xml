@@ -6,34 +6,85 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ListView
-        android:id="@+id/playerListView"
-        android:layout_width="395dp"
-        android:layout_height="595dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="13dp"
+    <TextView
+        android:id="@+id/player4spot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginLeft="133dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginRight="134dp"
+        android:text="TextView"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/player5spot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player3spot" />
+
+    <TextView
+        android:id="@+id/player5spot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginLeft="133dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginRight="134dp"
+        android:layout_marginBottom="126dp"
+        android:text="TextView"
+        android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addPlayerBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/player4spot" />
 
-    <Button
-        android:id="@+id/addPlayerBtn"
+    <TextView
+        android:id="@+id/player1spot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginLeft="161dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginRight="162dp"
-        android:layout_marginBottom="34dp"
-        android:text="Add Player"
-        app:layout_constraintBottom_toTopOf="@+id/playerListView"
+        android:layout_marginStart="133dp"
+        android:layout_marginLeft="133dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginRight="134dp"
+        android:text="TextView"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/player2spot"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player2spot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginLeft="133dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginRight="134dp"
+        android:text="TextView"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/player3spot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player1spot" />
+
+    <TextView
+        android:id="@+id/player3spot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginLeft="133dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginRight="134dp"
+        android:text="TextView"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/player4spot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player2spot" />
 </android.support.constraint.ConstraintLayout>
